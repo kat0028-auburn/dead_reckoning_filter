@@ -1,0 +1,7 @@
+<launch>
+    <node name="dead_reckoning_filter" pkg="dead_reckoning_filter" type="dead_reckoning_filter_node" output="screen">
+        <rosparam file="$(find dead_reckoning_filter)/config/matrices.yaml"/>
+        <rosparam file="$(find dead_reckoning_filter)/config/params.yaml"/>
+        <rosparam file="$(find dead_reckoning_filter)/config/offline_params.yaml"/>
+    </node>
+</launch>
